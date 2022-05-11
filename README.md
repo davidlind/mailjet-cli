@@ -17,4 +17,4 @@ That gives you a `mailjet-cli` binary that you can run.
 --subject "mailjet-cli!" --text "testing the mailjet-cli" `
 
 # Bugs
-Yes.
+Yes. This project is poorly tested(there are no tests, yet).
