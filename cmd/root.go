@@ -40,10 +40,11 @@ var sendCmd = &cobra.Command{
 		res, err := mailjetClient.SendMailV31(msg)
 		if err != nil {
 			log.Fatal(err)
+
 		}
 
-		for _, r := range res.ResultsV31 {
-			fmt.Println(r.Status)
+		if res.ResultsV31[0].Status != "success" {
+			log.Fatal("something went wrong when sending email")
 		}
 	},
 }
