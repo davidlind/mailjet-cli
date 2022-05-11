@@ -15,3 +15,6 @@ That gives you a `mailjet-cli` binary that you can run.
 # Usage
 `$ MAILJET_APIKEY=mykey MAILJET_SECRET=mysecret ./mailjet-cli send --from me@mydomain.com --to someone@else.com
 --subject "mailjet-cli!" --text "testing the mailjet-cli" `
+
+# Bugs
+Yes.
